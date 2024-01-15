@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:like_button/like_button.dart';
 import 'package:provider/provider.dart';
-import 'package:sushi_app/%20components/button.dart';
-import 'package:sushi_app/%20components/food_tile.dart';
+
+import 'package:sushi_app/components/food_tile.dart';
 import 'package:sushi_app/models/shop.dart';
 import 'package:sushi_app/pages/food_detials_page.dart';
 import 'package:sushi_app/theme/colors.dart';
@@ -77,7 +78,16 @@ class _MenuPageState extends State<MenuPage> {
                           color: Colors.white),
                     ),
                     SizedBox(height: 20),
-                    MyButton(text: "Redeem", onTap: () {})
+                    // MyButton(text: "Redeem", onTap: () {})
+                    TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Redeem",
+                          style: TextStyle(
+                            color: Colors.white,
+                            backgroundColor: secondaryColor,
+                          ),
+                        ))
                   ],
                 ),
                 Image.asset(
@@ -167,10 +177,8 @@ class _MenuPageState extends State<MenuPage> {
                     ),
                   ],
                 ),
-                Icon(
-                  Icons.favorite_border,
-                  size: 28,
-                  color: Colors.grey,
+                LikeButton(
+                  size: 32,
                 )
               ],
             ),

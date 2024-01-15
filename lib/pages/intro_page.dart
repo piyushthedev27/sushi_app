@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sushi_app/%20components/button.dart';
+import 'package:sushi_app/components/button.dart';
 import 'package:sushi_app/theme/colors.dart';
 
 class IntroPage extends StatelessWidget {
@@ -25,8 +25,10 @@ class IntroPage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Padding(
-              padding: const EdgeInsets.all(80.0),
-              child: Image.asset('lib/assets/images/sushi_3.png'),
+              padding: const EdgeInsets.all(0.0),
+              child: Image.asset(
+                'lib/assets/images/sushi_man.png',
+              ),
             ),
             const SizedBox(height: 20),
             Text(

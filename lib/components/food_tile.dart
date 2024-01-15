@@ -14,8 +14,8 @@ class FoodTile extends StatelessWidget {
         color: Colors.grey.shade100,
         borderRadius: BorderRadius.circular(20),
       ),
-      margin: EdgeInsets.only(left: 25),
-      padding: EdgeInsets.all(25),
+      margin: EdgeInsets.only(left: 20),
+      padding: EdgeInsets.all(20),
       child: GestureDetector(
         onTap: onTap,
         child: Column(

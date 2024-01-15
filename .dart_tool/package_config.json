@@ -92,6 +92,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "like_button",
+      "rootUri": "file:///home/kamlesh/.pub-cache/hosted/pub.dev/like_button-2.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///home/kamlesh/.pub-cache/hosted/pub.dev/lints-2.1.1",
       "packageUri": "lib/",
@@ -260,7 +266,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-01-14T16:40:53.906140Z",
+  "generated": "2024-01-15T16:33:25.849279Z",
   "generator": "pub",
   "generatorVersion": "3.2.4"
 }

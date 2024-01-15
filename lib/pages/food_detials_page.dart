@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:like_button/like_button.dart';
 import 'package:provider/provider.dart';
-import 'package:sushi_app/%20components/button.dart';
+import 'package:sushi_app/components/button.dart';
 import 'package:sushi_app/models/food.dart';
 import 'package:sushi_app/models/shop.dart';
 import 'package:sushi_app/theme/colors.dart';
@@ -84,15 +85,24 @@ class _FoodDetialsPageState extends State<FoodDetialsPage> {
                   ),
                   SizedBox(height: 20),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Icon(
-                        Icons.star_rounded,
-                        color: Colors.amber,
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.star_rounded,
+                            color: Colors.amber,
+                            size: 30,
+                          ),
+                          SizedBox(width: 5),
+                          Text(
+                            widget.food.rating,
+                            style: TextStyle(color: Colors.grey, fontSize: 20),
+                          ),
+                        ],
                       ),
-                      SizedBox(width: 5),
-                      Text(
-                        widget.food.rating,
-                        style: TextStyle(color: Colors.grey),
+                      LikeButton(
+                        size: 32,
                       )
                     ],
                   ),
@@ -107,7 +117,7 @@ class _FoodDetialsPageState extends State<FoodDetialsPage> {
                     style: TextStyle(
                         color: Colors.grey.shade800,
                         fontWeight: FontWeight.bold,
-                        fontSize: 18),
+                        fontSize: 16),
                   ),
                   SizedBox(height: 10),
                   Text(
